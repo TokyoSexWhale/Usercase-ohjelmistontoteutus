@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Äänestysjärjestelmä - Ylläpitäjä</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Ylläpitäjän näkymä</h1>
+    
+    <div id="admin-view">
+        <h2>Lisää uusi äänestys</h2>
+        <div id="admin-controls">
+            <input type="text" id="new-vote-name" placeholder="Äänestyksen nimi">
+            <input type="text" id="new-vote-options" placeholder="Vaihtoehdot (pilkulla erotettuina)">
+            <button onclick="addVote()">Lisää äänestys</button>
+        </div>
+        <h2>Hallinnoi äänestyksiä</h2>
+        <ul id="votes-admin"></ul>
+        <button onclick="redirectToUser()">Takaisin käyttäjän näkymään</button>
+    </div>
+
+    <script src="asia.js"></script>
+</body>
+</html>
